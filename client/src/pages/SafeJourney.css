@@ -1,0 +1,618 @@
+/* =========================
+   SAFE JOURNEY PAGE
+========================= */
+
+.journey-page {
+    min-height: calc(100vh - 70px);
+    padding: 70px 8%;
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(124, 58, 237, 0.10) 0%,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 90% 15%,
+            rgba(196, 181, 253, 0.28) 0%,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 75% 90%,
+            rgba(124, 58, 237, 0.08) 0%,
+            transparent 35%
+        ),
+        linear-gradient(
+            180deg,
+            #faf9ff 0%,
+            #f1edff 100%
+        );
+
+    color: #17151f;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Decorative background */
+
+.journey-page::before {
+    content: "";
+    position: absolute;
+
+    width: 360px;
+    height: 360px;
+
+    top: -150px;
+    right: -100px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(124, 58, 237, 0.14) 0%,
+        transparent 70%
+    );
+
+    pointer-events: none;
+}
+
+.journey-page::after {
+    content: "";
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    bottom: -140px;
+    left: -100px;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(196, 181, 253, 0.25) 0%,
+        transparent 70%
+    );
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.journey-header {
+    position: relative;
+    z-index: 1;
+
+    max-width: 850px;
+    margin-bottom: 38px;
+}
+
+.journey-tag {
+    margin: 0 0 10px;
+
+    color: #6d28d9;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.journey-header h1 {
+    margin: 0 0 12px;
+
+    font-size: 44px;
+    line-height: 1.15;
+
+    color: #17151f;
+    letter-spacing: -0.8px;
+}
+
+.journey-header p:last-child {
+    margin: 0;
+
+    max-width: 650px;
+
+    color: #686275;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   MAIN FORM AREA
+========================= */
+
+.journey-container {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 850px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.journey-form-card {
+    background: rgba(255, 255, 255, 0.94);
+
+    border: 1px solid #e6def7;
+    border-radius: 24px;
+
+    padding: 34px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 20px 60px rgba(60, 40, 100, 0.10),
+        0 4px 12px rgba(60, 40, 100, 0.04);
+
+    backdrop-filter: blur(10px);
+}
+
+.journey-form-card h2 {
+    margin: 0;
+
+    color: #24183b;
+    font-size: 22px;
+}
+
+.journey-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    margin-top: 26px;
+}
+
+
+/* =========================
+   FORM FIELDS
+========================= */
+
+.journey-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.journey-field label {
+    color: #332b40;
+
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.journey-field input {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    border: 1px solid #ddd5ec;
+    border-radius: 12px;
+
+    outline: none;
+
+    background: #fcfbff;
+    color: #211b29;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    box-sizing: border-box;
+
+    transition: all 0.2s ease;
+}
+
+.journey-field input::placeholder {
+    color: #aaa4b4;
+}
+
+.journey-field input:hover {
+    border-color: #cfc1e8;
+}
+
+.journey-field input:focus {
+    background: #ffffff;
+
+    border-color: #6d28d9;
+
+    box-shadow:
+        0 0 0 4px rgba(109, 40, 217, 0.09);
+}
+
+
+/* =========================
+   START JOURNEY BUTTON
+========================= */
+
+.journey-button {
+    width: 100%;
+
+    margin-top: 4px;
+    padding: 15px 20px;
+
+    border: none;
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4c1d95,
+            #5b21b6,
+            #7c3aed
+        );
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 650;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 10px 22px rgba(76, 29, 149, 0.20);
+
+    transition: all 0.25s ease;
+}
+
+.journey-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 14px 28px rgba(76, 29, 149, 0.26);
+}
+
+.journey-button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.journey-error {
+    padding: 13px 15px;
+
+    border: 1px solid #fecaca;
+    border-radius: 11px;
+
+    background: #fff1f2;
+    color: #b91c1c;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   SUCCESS
+========================= */
+
+.journey-success {
+    padding: 14px 16px;
+
+    border: 1px solid #bbf7d0;
+    border-radius: 11px;
+
+    background: #f0fdf4;
+    color: #15803d;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   STAY CONNECTED
+========================= */
+
+.journey-info-card {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin-top: 28px;
+
+    padding: 32px;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    border: 1px solid #e6def7;
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 60px rgba(60, 40, 100, 0.09);
+
+    backdrop-filter: blur(10px);
+}
+
+.journey-info-header h2 {
+    margin: 0 0 8px;
+
+    color: #24183b;
+    font-size: 23px;
+}
+
+.journey-info-header p {
+    margin: 0;
+
+    color: #756d80;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FEATURE CARDS
+========================= */
+
+.journey-features {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+
+    margin-top: 25px;
+}
+
+.journey-feature {
+    min-height: 190px;
+
+    padding: 21px;
+
+    border: 1px solid #e4dcf3;
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #faf8ff 100%
+        );
+
+    color: #24183b;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    box-shadow:
+        0 8px 22px rgba(60, 40, 100, 0.05);
+
+    transition: all 0.25s ease;
+}
+
+.journey-feature:hover {
+    transform: translateY(-5px);
+
+    border-color: #c4b5fd;
+
+    box-shadow:
+        0 14px 30px rgba(76, 29, 149, 0.12);
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #f7f2ff 100%
+        );
+}
+
+.journey-feature strong {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #33205c;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.journey-feature p {
+    margin: 0;
+
+    color: #71697c;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.journey-feature span {
+    display: block;
+
+    margin-top: 17px;
+
+    color: #6d28d9;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.2s ease;
+}
+
+.journey-feature:hover span {
+    color: #4c1d95;
+}
+
+
+/* =========================
+   JOURNEY STATUS
+========================= */
+
+.journey-status {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin-top: 28px;
+
+    padding: 27px 30px;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f4efff 0%,
+            #ebe3ff 100%
+        );
+
+    border: 1px solid #d9ccf3;
+    border-radius: 20px;
+
+    box-shadow:
+        0 12px 30px rgba(60, 40, 100, 0.07);
+}
+
+.journey-status h2 {
+    margin: 0 0 8px;
+
+    color: #33205c;
+    font-size: 20px;
+}
+
+.journey-status p {
+    margin: 0;
+
+    color: #70677c;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ACTIVE JOURNEY
+========================= */
+
+.journey-status:has(h2:first-child) {
+    transition: 0.2s ease;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .journey-page {
+        padding: 55px 6%;
+    }
+
+    .journey-header h1 {
+        font-size: 38px;
+    }
+
+    .journey-features {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-feature {
+        min-height: auto;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .journey-page {
+        padding: 42px 5%;
+    }
+
+    .journey-header {
+        margin-bottom: 28px;
+    }
+
+    .journey-header h1 {
+        font-size: 31px;
+        letter-spacing: -0.4px;
+    }
+
+    .journey-header p:last-child {
+        font-size: 14px;
+    }
+
+    .journey-form-card,
+    .journey-info-card {
+        padding: 23px;
+        border-radius: 18px;
+    }
+
+    .journey-form-card h2 {
+        font-size: 20px;
+    }
+
+    .journey-info-header h2 {
+        font-size: 20px;
+    }
+
+    .journey-features {
+        gap: 12px;
+    }
+
+    .journey-feature {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .journey-status {
+        padding: 22px;
+        border-radius: 17px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .journey-page {
+        padding: 35px 4%;
+    }
+
+    .journey-header h1 {
+        font-size: 28px;
+    }
+
+    .journey-form-card,
+    .journey-info-card {
+        padding: 19px;
+    }
+
+    .journey-field input {
+        padding: 13px;
+    }
+
+    .journey-button {
+        padding: 14px;
+    }
+}

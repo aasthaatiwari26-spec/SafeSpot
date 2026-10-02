@@ -1,0 +1,316 @@
+nav {
+  height: 70px;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+
+  box-sizing: border-box;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: 0.2s ease;
+}
+
+nav > div:first-child a {
+  font-size: 22px;
+  font-weight: 700;
+  color: #4c1d95;
+}
+
+nav a:hover {
+  color: #4c1d95;
+}
+
+
+/* =========================
+   LOGOUT BUTTON
+   ========================= */
+
+.navbar-logout-btn {
+  padding: 9px 17px;
+
+  border: 1px solid #d8ccef;
+  border-radius: 9px;
+
+  background: #f7f4ff;
+  color: #4c1d95;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.navbar-logout-btn:hover {
+  background: #4c1d95;
+  border-color: #4c1d95;
+  color: #ffffff;
+
+  transform: translateY(-1px);
+  box-shadow: 0 5px 12px rgba(76, 29, 149, 0.18);
+}
+
+.navbar-logout-btn:active {
+  transform: translateY(0);
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+  nav {
+    padding: 0 15px;
+  }
+
+  nav > div {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  nav > div:first-child a {
+    font-size: 18px;
+  }
+
+  .navbar-logout-btn {
+    padding: 7px 12px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+   /* =========================
+    NAVBAR LOGOUT MODAL
+ ========================= */
+
+.navbar-logout-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(24, 18, 38, 0.48);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  z-index: 99999;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+}
+
+
+.navbar-logout-modal {
+  width: 400px;
+
+  max-width: 100%;
+
+  padding: 34px;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e2f3;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 25px 70px rgba(60, 40, 100, 0.25);
+
+  animation: navbarLogoutModalIn 0.2s ease;
+}
+
+
+/* Logout Icon */
+
+.navbar-logout-icon {
+  width: 52px;
+  height: 52px;
+
+  margin: 0 auto 18px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ede9fe;
+
+  color: #7c3aed;
+
+  font-size: 23px;
+
+  font-weight: 700;
+}
+
+
+/* Heading */
+
+.navbar-logout-modal h2 {
+  margin: 0 0 10px;
+
+  color: #17151f;
+
+  font-size: 22px;
+
+  font-weight: 700;
+}
+
+
+/* Description */
+
+.navbar-logout-modal p {
+  margin: 0 auto 26px;
+
+  max-width: 300px;
+
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* Buttons */
+
+.navbar-logout-actions {
+  display: flex;
+
+  gap: 12px;
+
+  justify-content: center;
+}
+
+
+.navbar-logout-actions button {
+  flex: 1;
+
+  padding: 12px 20px;
+
+  border-radius: 10px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+/* Cancel */
+
+.navbar-cancel-btn {
+  background: #ffffff;
+
+  color: #555;
+
+  border: 1px solid #ddd6e8;
+}
+
+
+.navbar-cancel-btn:hover {
+  background: #f8f7ff;
+
+  border-color: #c4b5fd;
+}
+
+
+/* OK */
+
+.navbar-confirm-btn {
+  background: #7c3aed;
+
+  color: #ffffff;
+
+  border: 1px solid #7c3aed;
+}
+
+
+.navbar-confirm-btn:hover {
+  background: #6d28d9;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 20px rgba(124, 58, 237, 0.20);
+}
+
+
+/* Animation */
+
+@keyframes navbarLogoutModalIn {
+
+  from {
+    opacity: 0;
+
+    transform: scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1);
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .navbar-logout-modal {
+    width: 100%;
+
+    padding: 28px 22px;
+
+    border-radius: 18px;
+  }
+
+  .navbar-logout-actions {
+    flex-direction: column;
+  }
+
+  .navbar-logout-actions button {
+    width: 100%;
+  }
+
+}
+}

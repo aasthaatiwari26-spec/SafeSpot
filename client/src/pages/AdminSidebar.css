@@ -1,0 +1,322 @@
+/* ============================= */
+/* ADMIN SIDEBAR */
+/* ============================= */
+
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #eee8f5;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+/* ============================= */
+/* LOGO */
+/* ============================= */
+
+.admin-sidebar-logo {
+  padding: 30px 24px 26px;
+  border-bottom: 1px solid #f0edf5;
+  flex-shrink: 0;
+}
+
+.admin-sidebar-logo h2 {
+  margin: 0;
+  color: #7c3aed;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+
+.admin-sidebar-logo span {
+  display: block;
+  margin-top: 6px;
+  color: #999;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+}
+
+/* ============================= */
+/* NAVIGATION — VERTICAL LIST */
+/* ============================= */
+
+.admin-sidebar-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 14px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.admin-sidebar-nav::-webkit-scrollbar {
+  width: 4px;
+}
+
+.admin-sidebar-nav::-webkit-scrollbar-thumb {
+  background: #ddd6fe;
+  border-radius: 10px;
+}
+
+/* ============================= */
+/* NAV LINK (icon + full name, close spacing) */
+/* ============================= */
+
+.admin-nav-link {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  width: 100%;
+  min-height: 42px;
+  margin-bottom: 2px;
+  padding: 0 14px;
+  gap: 12px;
+  border-radius: 10px;
+  background: transparent;
+  color: #555;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.admin-nav-icon {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #f6f3ff;
+  color: #7c3aed;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.admin-nav-link > span:last-child {
+  display: inline-block !important;
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.admin-nav-link:hover {
+  background: #f8f6ff;
+  color: #6d28d9;
+}
+
+.admin-nav-link.active {
+  background: #f1edff;
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+.admin-nav-link.active .admin-nav-icon {
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+/* ============================= */
+/* SIDEBAR BOTTOM / LOGOUT */
+/* ============================= */
+
+.admin-sidebar-bottom {
+  flex-shrink: 0;
+  padding: 14px;
+  border-top: 1px solid #f0edf5;
+}
+
+.admin-logout-button {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  width: 100%;
+  min-height: 42px;
+  padding: 0 14px;
+  gap: 12px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #777;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.admin-logout-button .admin-nav-icon {
+  background: #fafafa;
+  color: #777;
+}
+
+.admin-logout-button > span:last-child {
+  flex: 1;
+}
+
+.admin-logout-button:hover {
+  background: #fff4f4;
+  color: #dc2626;
+}
+
+.admin-logout-button:hover .admin-nav-icon {
+  background: #fff0f0;
+  color: #dc2626;
+}
+
+/* ============================= */
+/* LOGOUT POPUP */
+/* ============================= */
+
+.logout-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 15, 30, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.logout-popup {
+  width: 380px;
+  max-width: calc(100% - 40px);
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 18px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.20);
+  animation: logoutPopupIn 0.2s ease;
+}
+
+.logout-popup-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f1edff;
+  color: #7c3aed;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logout-popup h3 {
+  margin: 0;
+  color: #222;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.logout-popup p {
+  margin: 10px 0 25px;
+  color: #777;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.logout-popup-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.logout-cancel-button,
+.logout-confirm-button {
+  flex: 1;
+  padding: 11px 20px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.logout-cancel-button {
+  background: #ffffff;
+  color: #555;
+  border: 1px solid #ddd;
+}
+
+.logout-cancel-button:hover {
+  background: #f5f5f5;
+}
+
+.logout-confirm-button {
+  background: #7c3aed;
+  color: #ffffff;
+  border: 1px solid #7c3aed;
+}
+
+.logout-confirm-button:hover {
+  background: #6d28d9;
+}
+
+@keyframes logoutPopupIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ============================= */
+/* RESPONSIVE — MOBILE ONLY collapses to icons */
+/* ============================= */
+
+@media (max-width: 700px) {
+  .admin-sidebar {
+    width: 70px;
+  }
+
+  .admin-sidebar-logo {
+    padding: 22px 8px;
+    text-align: center;
+  }
+
+  .admin-sidebar-logo h2 {
+    font-size: 16px;
+  }
+
+  .admin-sidebar-logo span {
+    display: none;
+  }
+
+  .admin-nav-link,
+  .admin-logout-button {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .admin-nav-link > span:last-child,
+  .admin-logout-button > span:last-child {
+    display: none !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .logout-popup {
+    width: 340px;
+    padding: 25px;
+  }
+
+  .logout-popup-buttons {
+    flex-direction: column-reverse;
+  }
+
+  .logout-cancel-button,
+  .logout-confirm-button {
+    width: 100%;
+  }
+}

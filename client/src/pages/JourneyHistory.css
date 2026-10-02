@@ -1,0 +1,396 @@
+.history-page {
+  background: #f8f7ff;
+  min-height: 100vh;
+  color: #1f1f2e;
+}
+
+/* HERO */
+
+.history-hero {
+  background: linear-gradient(135deg, #f1edff, #faf9ff);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.history-hero-content {
+  max-width: 850px;
+  margin: auto;
+}
+
+.history-tag {
+  color: #7c3aed;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+
+.history-hero h1 {
+  font-size: 46px;
+  line-height: 1.2;
+  margin: 0 auto 18px;
+  max-width: 800px;
+}
+
+.history-hero h1 span {
+  color: #7c3aed;
+}
+
+.history-hero p:last-child {
+  color: #666;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* MAIN */
+
+.history-section {
+  padding: 75px 20px;
+}
+
+.history-container {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.history-intro {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 45px;
+}
+
+.section-tag {
+  color: #7c3aed;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  margin-bottom: 10px;
+}
+
+.history-intro h2 {
+  font-size: 32px;
+  margin: 0 0 14px;
+}
+
+.history-intro p:last-child {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* JOURNEY LIST */
+
+.journey-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.journey-card {
+  background: #fff;
+  border: 1px solid #e7e1f5;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 6px 20px rgba(55, 35, 100, 0.05);
+}
+
+.journey-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+/* ROUTE */
+
+.journey-route {
+  min-width: 300px;
+}
+
+.location-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.location-dot {
+  width: 11px;
+  height: 11px;
+  background: #7c3aed;
+  border-radius: 50%;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.destination-dot {
+  background: #5b21b6;
+}
+
+.location-item small,
+.journey-info small {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.location-item h3 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.route-line {
+  width: 2px;
+  height: 22px;
+  background: #ddd6fe;
+  margin: 4px 0 4px 4px;
+}
+
+/* INFO */
+
+.journey-info {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.journey-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.journey-status {
+  display: inline-block;
+  background: #ede9fe;
+  color: #6d28d9;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ACTIONS */
+
+.journey-actions {
+  border-top: 1px solid #eeeaf6;
+  margin-top: 22px;
+  padding-top: 18px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.view-journey-btn,
+.delete-journey-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-journey-btn {
+  background: #7c3aed;
+  color: white;
+}
+
+.view-journey-btn:hover {
+  background: #6d28d9;
+}
+
+.delete-journey-btn {
+  background: #f3f0f8;
+  color: #555;
+}
+
+.delete-journey-btn:hover {
+  background: #e9e4f2;
+}
+
+/* EMPTY */
+
+.empty-history {
+  background: #fff;
+  border: 1px solid #e7e1f5;
+  border-radius: 18px;
+  padding: 55px 25px;
+  text-align: center;
+}
+
+.empty-history h3 {
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.empty-history p {
+  color: #777;
+  margin-bottom: 22px;
+}
+
+.empty-history button {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* INFO SECTION */
+
+.history-info-section {
+  padding: 0 20px 60px;
+}
+
+.history-info {
+  max-width: 1050px;
+  margin: auto;
+  background: #f1edff;
+  border: 1px solid #ddd6fe;
+  border-radius: 20px;
+  padding: 38px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.history-info h2 {
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+
+.history-info p:last-child {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 650px;
+}
+
+.history-info button {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 12px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.history-info button:hover {
+  background: #6d28d9;
+}
+
+/* NOTE */
+
+.history-note-section {
+  padding: 0 20px 70px;
+}
+
+.history-note {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #e7e1f5;
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+}
+
+.history-note h2 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.history-note p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .journey-main {
+    flex-direction: column;
+  }
+
+  .journey-info {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .history-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .history-hero {
+    padding: 60px 20px;
+  }
+
+  .history-hero h1 {
+    font-size: 34px;
+  }
+
+  .history-section {
+    padding: 55px 18px;
+  }
+
+  .history-intro h2 {
+    font-size: 27px;
+  }
+
+  .journey-card {
+    padding: 20px;
+  }
+
+  .journey-route {
+    min-width: 0;
+  }
+
+  .history-info {
+    padding: 30px 25px;
+  }
+
+  .history-info h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .history-hero h1 {
+    font-size: 30px;
+  }
+
+  .history-hero p:last-child {
+    font-size: 15px;
+  }
+
+  .journey-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .journey-actions {
+    justify-content: stretch;
+  }
+
+  .view-journey-btn,
+  .delete-journey-btn {
+    flex: 1;
+  }
+
+  .history-info button {
+    width: 100%;
+  }
+}

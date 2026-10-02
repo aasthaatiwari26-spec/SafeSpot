@@ -1,0 +1,344 @@
+.awareness-page {
+    min-height: 100vh;
+    background: #f8f7ff;
+    color: #24212d;
+}
+
+
+/* Hero */
+
+.awareness-hero {
+    padding: 90px 8%;
+    background: linear-gradient(135deg, #f1edff, #faf9ff);
+}
+
+.awareness-hero-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.awareness-tag,
+.section-tag {
+    color: #7c3aed;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.awareness-hero h1 {
+    margin: 0 0 20px;
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+.awareness-hero h1 span {
+    color: #7c3aed;
+}
+
+.awareness-hero-text {
+    max-width: 700px;
+    margin: auto;
+    color: #666273;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* Common Section */
+
+.awareness-section {
+    padding: 75px 8%;
+}
+
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 0 0 12px;
+    font-size: 32px;
+    color: #282532;
+}
+
+.section-heading > p:last-child {
+    color: #706b7b;
+    line-height: 1.7;
+}
+
+
+/* Cards */
+
+.awareness-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.awareness-card {
+    background: white;
+    padding: 28px 25px;
+    border: 1px solid #e6e1f2;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.awareness-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(70, 45, 120, 0.08);
+}
+
+.awareness-card h3 {
+    margin: 0 0 12px;
+    color: #332b42;
+    font-size: 18px;
+}
+
+.awareness-card p {
+    margin: 0;
+    color: #6d6878;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* Travel Highlight */
+
+.awareness-highlight {
+    padding: 75px 8%;
+    background: #f1edff;
+}
+
+.highlight-content {
+    max-width: 1050px;
+    margin: auto;
+    text-align: center;
+}
+
+.highlight-content h2 {
+    margin: 0 0 15px;
+    font-size: 32px;
+}
+
+.highlight-content > p:not(.section-tag) {
+    max-width: 700px;
+    margin: auto;
+    color: #625d6d;
+    line-height: 1.7;
+}
+
+.highlight-points {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.highlight-points div {
+    background: white;
+    padding: 23px;
+    border-radius: 13px;
+    border: 1px solid #e2dcf2;
+}
+
+.highlight-points strong,
+.highlight-points span {
+    display: block;
+}
+
+.highlight-points strong {
+    margin-bottom: 8px;
+    color: #332b42;
+}
+
+.highlight-points span {
+    color: #6d6878;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Digital Safety */
+
+.digital-section {
+    background: #faf9ff;
+}
+
+
+/* Emergency Awareness */
+
+.emergency-awareness {
+    padding: 75px 8%;
+}
+
+.emergency-awareness-content {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 45px;
+    background: linear-gradient(135deg, #f1edff, #e9e2ff);
+    border: 1px solid #d8cdf5;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.emergency-awareness-content h2 {
+    margin: 0 0 15px;
+    font-size: 30px;
+}
+
+.emergency-awareness-content > p:not(.section-tag) {
+    max-width: 700px;
+    margin: 0 auto 28px;
+    color: #625d6d;
+    line-height: 1.7;
+}
+
+.emergency-awareness-content button,
+.awareness-final button {
+    border: none;
+    background: #7c3aed;
+    color: white;
+    padding: 13px 26px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.emergency-awareness-content button:hover,
+.awareness-final button:hover {
+    background: #6d28d9;
+    transform: translateY(-2px);
+}
+
+
+/* Community */
+
+.community-awareness {
+    background: #f1edff;
+}
+
+.community-awareness-points {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.community-awareness-points div {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #e3ddf2;
+}
+
+.community-awareness-points h3 {
+    margin: 0 0 10px;
+    color: #332b42;
+}
+
+.community-awareness-points p {
+    margin: 0;
+    color: #6d6878;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* Final CTA */
+
+.awareness-final {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.awareness-final > div {
+    max-width: 900px;
+    margin: auto;
+}
+
+.awareness-final h2 {
+    margin: 0 0 12px;
+    font-size: 30px;
+}
+
+.awareness-final p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #6d6878;
+    line-height: 1.7;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .awareness-hero h1 {
+        font-size: 40px;
+    }
+
+    .awareness-grid,
+    .highlight-points,
+    .community-awareness-points {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .awareness-hero {
+        padding: 65px 6%;
+    }
+
+    .awareness-hero h1 {
+        font-size: 32px;
+    }
+
+    .awareness-hero-text {
+        font-size: 15px;
+    }
+
+    .awareness-section,
+    .awareness-highlight,
+    .emergency-awareness,
+    .awareness-final {
+        padding: 55px 6%;
+    }
+
+    .section-heading h2,
+    .highlight-content h2 {
+        font-size: 26px;
+    }
+
+    .awareness-grid,
+    .highlight-points,
+    .community-awareness-points {
+        grid-template-columns: 1fr;
+    }
+
+    .emergency-awareness-content {
+        padding: 38px 22px;
+        border-radius: 16px;
+    }
+
+    .emergency-awareness-content h2,
+    .awareness-final h2 {
+        font-size: 25px;
+    }
+
+    .emergency-awareness-content button,
+    .awareness-final button {
+        width: 100%;
+    }
+}

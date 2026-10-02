@@ -1,0 +1,464 @@
+.about-page {
+    min-height: 100vh;
+    background: #f8f7ff;
+    color: #1f1f29;
+}
+
+/* Hero */
+
+.about-hero {
+    background: linear-gradient(135deg, #f1edff, #faf9ff);
+    padding: 90px 8%;
+}
+
+.about-hero-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-tag,
+.section-tag {
+    color: #7c3aed;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin: 0 0 20px;
+    color: #24212d;
+}
+
+.about-hero h1 span {
+    color: #7c3aed;
+}
+
+.about-hero-text {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #666273;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.about-primary-btn,
+.about-secondary-btn {
+    border: none;
+    background: #4c1d95;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about-primary-btn:hover,
+.about-secondary-btn:hover {
+    background: #4c1d95;
+    transform: translateY(-2px);
+}
+
+
+/* Common Sections */
+
+.about-section {
+    padding: 75px 8%;
+}
+
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    margin: 0 0 12px;
+    color: #282532;
+}
+
+.section-heading>p:last-child {
+    color: #706b7b;
+    line-height: 1.6;
+}
+
+
+/* Introduction */
+
+.about-intro-card {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 35px 40px;
+    border-radius: 16px;
+    border: 1px solid #e6e1f2;
+    box-shadow: 0 5px 20px rgba(60, 40, 100, 0.06);
+}
+
+.about-intro-card p {
+    color: #625d6d;
+    line-height: 1.8;
+    margin: 0 0 15px;
+}
+
+.about-intro-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* How It Works */
+
+.how-section {
+    background: #f1edff;
+    padding: 75px 8%;
+}
+
+.steps-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.step-card {
+    background: white;
+    padding: 28px 22px;
+    border-radius: 14px;
+    border: 1px solid #e4def5;
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(70, 45, 120, 0.08);
+}
+
+.step-number {
+    color: #4c1d95;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.step-card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.step-card p {
+    color: #6d6878;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* Features */
+
+.features-grid {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #e6e1f2;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(60, 40, 100, 0.07);
+}
+
+.feature-card h3 {
+    margin: 0 0 10px;
+    color: #332b42;
+}
+
+.feature-card p {
+    margin: 0;
+    color: #6d6878;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* Community */
+
+.community-section {
+    padding: 75px 8%;
+    background: #4c1d95;
+    color: white;
+}
+
+.community-content {
+    max-width: 950px;
+    margin: auto;
+    text-align: center;
+}
+
+.community-section .section-tag {
+    color: #ddd0ff;
+}
+
+.community-section h2 {
+    font-size: 32px;
+    margin: 0 0 18px;
+}
+
+.community-section p {
+    max-width: 780px;
+    margin: auto;
+    line-height: 1.7;
+    color: #eee9ff;
+}
+
+.community-points {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.community-points div {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 22px;
+    border-radius: 12px;
+}
+
+.community-points strong,
+.community-points span {
+    display: block;
+}
+
+.community-points strong {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.community-points span {
+    color: #e8e1ff;
+    font-size: 14px;
+}
+
+
+/* Safety Awareness Link */
+
+.about-awareness-link {
+    padding: 20px 8% 70px;
+}
+
+.about-awareness-content {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 45px;
+    background: linear-gradient(135deg, #f1edff, #e9e2ff);
+    border: 1px solid #d8cdf5;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-awareness-content::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: white;
+    opacity: 0.35;
+    border-radius: 50%;
+    top: -90px;
+    right: -60px;
+}
+
+.about-awareness-content::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: #d8cdf5;
+    opacity: 0.35;
+    border-radius: 50%;
+    bottom: -70px;
+    left: -40px;
+}
+
+.about-awareness-content .section-tag {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+.about-awareness-content h2 {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 14px;
+    font-size: 30px;
+    color: #292334;
+    line-height: 1.3;
+}
+
+.about-awareness-content p:not(.section-tag) {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: #625d6d;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.about-awareness-content button {
+    position: relative;
+    z-index: 1;
+    border: none;
+    background: #4c1d95;
+    color: white;
+    padding: 13px 27px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(124, 58, 237, 0.22);
+    transition: all 0.3s ease;
+}
+
+.about-awareness-content button:hover {
+    background: #4c1d95;
+    transform: translateY(-2px);
+    box-shadow: 0 9px 20px rgba(124, 58, 237, 0.28);
+}
+
+
+/* Safety Note */
+
+.safety-note-section {
+    padding: 70px 8%;
+}
+
+.safety-note {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    border: 1px solid #e5e0ef;
+    border-radius: 16px;
+    padding: 35px;
+    text-align: center;
+}
+
+.safety-note h2 {
+    margin-top: 0;
+    color: #302a3b;
+}
+
+.safety-note p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    color: #6d6878;
+    line-height: 1.7;
+}
+
+
+/* Responsive - Tablet */
+
+@media (max-width: 900px) {
+
+    .about-hero h1 {
+        font-size: 40px;
+    }
+
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .community-points {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Responsive - Mobile */
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        padding: 65px 6%;
+    }
+
+    .about-hero h1 {
+        font-size: 32px;
+    }
+
+    .about-hero-text {
+        font-size: 15px;
+    }
+
+    .about-section,
+    .how-section,
+    .community-section,
+    .safety-note-section {
+        padding: 55px 6%;
+    }
+
+    .section-heading h2,
+    .community-section h2 {
+        font-size: 26px;
+    }
+
+    .steps-grid,
+    .features-grid,
+    .community-points {
+        grid-template-columns: 1fr;
+    }
+
+    .about-intro-card {
+        padding: 25px;
+    }
+
+    /* Awareness Mobile */
+
+    .about-awareness-link {
+        padding: 10px 6% 55px;
+    }
+
+    .about-awareness-content {
+        padding: 38px 22px;
+        border-radius: 16px;
+    }
+
+    .about-awareness-content h2 {
+        font-size: 25px;
+    }
+
+    .about-awareness-content p:not(.section-tag) {
+        font-size: 14px;
+    }
+
+    .about-awareness-content button {
+        width: 100%;
+    }
+
+    /* Safety Note Mobile */
+
+    .safety-note {
+        padding: 28px 22px;
+    }
+}
