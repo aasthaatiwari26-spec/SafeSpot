@@ -24,19 +24,19 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
-
 // Create HTTP server
 const server = http.createServer(app);
-
 
 // Socket.IO
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:5173",
+        origin: [
+            "http://localhost:5173",
+            "https://safespot-women-safety.vercel.app"
+        ],
         methods: ["GET", "POST"]
     }
 });
-
 
 // Socket connection
 io.on("connection", (socket) => {
@@ -55,13 +55,11 @@ io.on("connection", (socket) => {
 
 });
 
-
 // Make Socket.IO available in routes
 app.use((req, res, next) => {
     req.io = io;
     next();
 });
-
 
 // Routes
 app.use("/api/auth", authRoutes);
@@ -78,12 +76,10 @@ app.use("/api/admin", adminRoutes);
 
 app.use("/api/journeys", journeyRoutes);
 
-
 // Home / Test route
 app.get("/", (req, res) => {
     res.send("SafeSpot Backend is running!");
 });
-
 
 // Start server
 const PORT = process.env.PORT || 5000;
