@@ -104,7 +104,7 @@ function Home() {
         </div>
 
         <div className="stat-item">
-          <h3>5+</h3>
+          <h3>5</h3>
           <p>Trusted Contacts</p>
         </div>
 
