@@ -14,7 +14,7 @@ function AdminIncidents() {
   useEffect(() => {
     const fetchIncidents = async () => {
       try {
-        const response = await fetch("http://https://safespot-backend-ltud.onrender.com/api/admin/incidents");
+        const response = await fetch("https://safespot-backend-ltud.onrender.com/api/admin/incidents");
 
         if (!response.ok) {
           throw new Error("Failed to fetch incidents");
@@ -37,7 +37,7 @@ function AdminIncidents() {
 
     try {
       const response = await fetch(
-        `http://https://safespot-backend-ltud.onrender.com/api/admin/incidents/${selectedIncident._id}`,
+        `https://safespot-backend-ltud.onrender.com/api/admin/incidents/${selectedIncident._id}`,
         {
           method: "PATCH",
           headers: {

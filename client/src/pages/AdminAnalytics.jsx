@@ -12,14 +12,14 @@ function AdminAnalytics() {
     const fetchAnalyticsData = async () => {
       try {
         // 1. Fetch overview stats
-        const statsRes = await fetch("http://https://safespot-backend-ltud.onrender.com/api/admin/dashboard-stats");
+        const statsRes = await fetch("https://safespot-backend-ltud.onrender.com/api/admin/dashboard-stats");
         const statsData = await statsRes.json();
         if (statsRes.ok && statsData.success) {
           setStats(statsData.stats);
         }
 
         // 2. Fetch category breakdown analytics
-        const analyticsRes = await fetch("http://https://safespot-backend-ltud.onrender.com/api/admin/analytics");
+        const analyticsRes = await fetch("https://safespot-backend-ltud.onrender.com/api/admin/analytics");
         const analyticsData = await analyticsRes.json();
         if (analyticsRes.ok && analyticsData.success) {
           setCategoryStats(analyticsData.categoryStats || []);

@@ -22,7 +22,7 @@ function Emergency() {
   const fetchTrustedContacts = async () => {
     try {
       const response = await fetch(
-        "http://https://safespot-backend-ltud.onrender.com/api/trusted-contacts",
+        "https://safespot-backend-ltud.onrender.com/api/trusted-contacts",
         {
           headers: {
             Authorization: `Bearer ${token}`,

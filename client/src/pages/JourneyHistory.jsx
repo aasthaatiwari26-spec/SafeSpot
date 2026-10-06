@@ -41,7 +41,7 @@ function JourneyHistory() {
       try {
 
         const response = await fetch(
-          `http://https://safespot-backend-ltud.onrender.com/api/journeys/${user.id}`
+          `https://safespot-backend-ltud.onrender.com/api/journeys/${user.id}`
         );
 
         const data = await response.json();
@@ -91,7 +91,7 @@ function JourneyHistory() {
     try {
 
       const response = await fetch(
-        `http://https://safespot-backend-ltud.onrender.com/api/journeys/${id}`,
+        `https://safespot-backend-ltud.onrender.com/api/journeys/${id}`,
         {
           method: "DELETE",
         }

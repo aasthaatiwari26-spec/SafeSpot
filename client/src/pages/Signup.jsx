@@ -30,7 +30,7 @@ function Signup() {
 
     try {
       const response = await fetch(
-        "http://https://safespot-backend-ltud.onrender.com/api/auth/register",
+        "https://safespot-backend-ltud.onrender.com/api/auth/register",
         {
           method: "POST",
           headers: {

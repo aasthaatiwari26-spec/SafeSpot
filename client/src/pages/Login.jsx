@@ -13,7 +13,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        "http://https://safespot-backend-ltud.onrender.com/api/auth/login",
+        "https://safespot-backend-ltud.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: {

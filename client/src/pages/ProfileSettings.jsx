@@ -19,7 +19,7 @@ function ProfileSettings() {
 
   const fetchProfile = async () => {
     try {
-      const response = await fetch("http://https://safespot-backend-ltud.onrender.com/api/users/me", {
+      const response = await fetch("https://safespot-backend-ltud.onrender.com/api/users/me", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -42,7 +42,7 @@ function ProfileSettings() {
       const body = { name, email, phone };
       if (password) body.password = password;
 
-      const response = await fetch("http://https://safespot-backend-ltud.onrender.com/api/users/me", {
+      const response = await fetch("https://safespot-backend-ltud.onrender.com/api/users/me", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
