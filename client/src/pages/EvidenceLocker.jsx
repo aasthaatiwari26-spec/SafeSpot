@@ -16,7 +16,7 @@ function EvidenceLocker() {
 
   const fetchEvidence = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/evidence", {
+      const response = await fetch("http://https://safespot-backend-ltud.onrender.com/api/evidence", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await response.json();
@@ -62,7 +62,7 @@ function EvidenceLocker() {
         formData.append("files", file);
       });
 
-      const response = await fetch("http://localhost:5000/api/evidence", {
+      const response = await fetch("http://https://safespot-backend-ltud.onrender.com/api/evidence", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -90,7 +90,7 @@ function EvidenceLocker() {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/evidence/${id}`, {
+      const response = await fetch(`http://https://safespot-backend-ltud.onrender.com/api/evidence/${id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });

@@ -60,7 +60,7 @@ function SafeJourney() {
       setSuccess("");
 
       const response = await fetch(
-        "http://localhost:5000/api/journeys",
+        "http://https://safespot-backend-ltud.onrender.com/api/journeys",
         {
           method: "POST",
 

@@ -392,7 +392,7 @@ function ReportIncident() {
 
       const response =
         await fetch(
-          "http://localhost:5000/api/incidents",
+          "http://https://safespot-backend-ltud.onrender.com/api/incidents",
           {
             method: "POST",
 

@@ -15,7 +15,7 @@ function AdminDashboard() {
   useEffect(() => {
     const fetchDashboardData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/admin/dashboard-stats");
+        const response = await fetch("http://https://safespot-backend-ltud.onrender.com/api/admin/dashboard-stats");
         const data = await response.json();
         
         if (response.ok && data.success) {

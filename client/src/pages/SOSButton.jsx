@@ -23,7 +23,7 @@ function SOSButton() {
         setStatus('Sending Alert...');
 
         try {
-          const response = await fetch('http://localhost:5000/api/incidents/sos', {
+          const response = await fetch('http://https://safespot-backend-ltud.onrender.com/api/incidents/sos', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ latitude, longitude })

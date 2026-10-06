@@ -57,7 +57,7 @@ function SafetyMap() {
   useEffect(() => {
     const fetchIncidents = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/incidents");
+        const response = await fetch("http://https://safespot-backend-ltud.onrender.com/api/incidents");
         if (!response.ok) {
           throw new Error("Failed to fetch incidents");
         }
@@ -78,7 +78,7 @@ function SafetyMap() {
   // ==========================================
   useEffect(() => {
     // Backend se connect karo
-    const socket = io("http://localhost:5000");
+    const socket = io("http://https://safespot-backend-ltud.onrender.com");
 
     // Jab naya report aaye, usko current state mein add kar do
     socket.on("newReport", (newIncident) => {

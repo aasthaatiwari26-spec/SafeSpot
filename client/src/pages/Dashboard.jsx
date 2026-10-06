@@ -62,7 +62,7 @@ function Dashboard() {
         }
 
         const response = await fetch(
-          `http://localhost:5000/api/journeys/${parsedUser.id}`
+          `http://https://safespot-backend-ltud.onrender.com/api/journeys/${parsedUser.id}`
         );
 
         if (!response.ok) {

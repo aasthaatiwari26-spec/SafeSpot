@@ -11,7 +11,7 @@ function AdminUsers() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/admin/users");
+        const response = await fetch("http://https://safespot-backend-ltud.onrender.com/api/admin/users");
 
         if (!response.ok) {
           throw new Error("Failed to fetch users");

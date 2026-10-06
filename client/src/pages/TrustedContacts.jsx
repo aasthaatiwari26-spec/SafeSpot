@@ -16,7 +16,7 @@ function TrustedContacts() {
 
     const fetchContacts = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/trusted-contacts", {
+            const response = await fetch("http://https://safespot-backend-ltud.onrender.com/api/trusted-contacts", {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -51,7 +51,7 @@ function TrustedContacts() {
         }
 
         try {
-            const response = await fetch("http://localhost:5000/api/trusted-contacts", {
+            const response = await fetch("http://https://safespot-backend-ltud.onrender.com/api/trusted-contacts", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -80,7 +80,7 @@ function TrustedContacts() {
 
     const handleRemoveContact = async (id) => {
         try {
-            const response = await fetch(`http://localhost:5000/api/trusted-contacts/${id}`, {
+            const response = await fetch(`http://https://safespot-backend-ltud.onrender.com/api/trusted-contacts/${id}`, {
                 method: "DELETE",
                 headers: {
                     Authorization: `Bearer ${token}`,
